@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Hydro Carbon</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_quiz">Quiz</string>
+    <string name="nav_ebook">E-Book</string>
+    <string name="nav_dictionary">Dictionary</string>
+    <string name="nav_practice">Practice</string>
+    <string name="nav_tutorial_alkana">Alkana</string>
+    <string name="nav_tutorial_alkuna">Alkuna</string>
+    <string name="nav_tutorial_alkena">Alkena</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Alkana</item>
+        <item>Alkuna</item>
+        <item>Alkena</item>
+        <item>E-Book</item>
+        <item>Dictionary</item>
+        <item>Quiz</item>
+        <item>Practice</item>
+    </string-array>
+
+    <string name="nav_settings">Settings</string>
+    <string name="activity_title_settings">Settings</string>
+
+    <string name="nav_about_us">About Us</string>
+    <string name="activity_title_about_us">About Us</string>
+
+    <string name="action_logout">Logout</string>
+</resources>
