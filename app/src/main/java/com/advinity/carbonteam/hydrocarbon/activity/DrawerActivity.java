@@ -35,8 +35,6 @@ public class DrawerActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private DrawerLayout drawer;
     private View navHeader;
-    private ImageView imgNavHeaderBg, imgProfile;
-    private TextView txtName, txtWebsite;
     private Toolbar toolbar;
     private FloatingActionButton fab;
 
@@ -76,10 +74,6 @@ public class DrawerActivity extends AppCompatActivity {
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
-        txtName = (TextView) navHeader.findViewById(R.id.name);
-        txtWebsite = (TextView) navHeader.findViewById(R.id.website);
-        imgNavHeaderBg = (ImageView) navHeader.findViewById(R.id.img_header_bg);
-        imgProfile = (ImageView) navHeader.findViewById(R.id.img_profile);
 
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
@@ -91,9 +85,6 @@ public class DrawerActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        // load nav menu header data
-        loadNavHeader();
 
         // initializing navigation menu
         setUpNavigationView();
@@ -124,13 +115,13 @@ public class DrawerActivity extends AppCompatActivity {
                         navItemIndex = 1;
                         CURRENT_TAG = TAG_ALKANA;
                         break;
-                    case R.id.nav_tutorial_alkuna:
-                        navItemIndex = 2;
-                        CURRENT_TAG = TAG_ALKUNA;
-                        break;
                     case R.id.nav_tutorial_alkena:
-                        navItemIndex = 3;
+                        navItemIndex = 2;
                         CURRENT_TAG = TAG_ALKENA;
+                        break;
+                    case R.id.nav_tutorial_alkuna:
+                        navItemIndex = 3;
+                        CURRENT_TAG = TAG_ALKUNA;
                         break;
                     case R.id.nav_ebook:
                         navItemIndex = 4;
@@ -198,14 +189,6 @@ public class DrawerActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
     }
 
-    private void loadNavHeader() {
-        txtName.setText("Hydro Carbon");
-        txtWebsite.setText("Advinity.HydroCarbon.com");
-
-//        // showing dot next to notifications label
-//        navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
-    }
-
     private void loadHomeFragment() {
         // selecting appropriate nav menu item
         selectNavMenu();
@@ -266,13 +249,13 @@ public class DrawerActivity extends AppCompatActivity {
                 AlkanaFragment alkanaFragment = new AlkanaFragment();
                 return alkanaFragment;
             case 2:
-                //tutorial alkuna
-                AlkunaFragment alkunaFragment = new AlkunaFragment();
-                return alkunaFragment;
-            case 3:
                 //tutorial alkena
                 AlkenaFragment alkenaFragment = new AlkenaFragment();
                 return alkenaFragment;
+            case 3:
+                //tutorial alkena
+                AlkunaFragment alkunaFragment = new AlkunaFragment();
+                return alkunaFragment;
             case 4:
                 //ebook
                 EbookFragment ebookFragment = new EbookFragment();

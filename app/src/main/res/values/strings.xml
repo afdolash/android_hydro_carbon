@@ -20,8 +20,8 @@
     <string-array name="nav_item_activity_titles">
         <item>Home</item>
         <item>Alkana</item>
-        <item>Alkuna</item>
         <item>Alkena</item>
+        <item>Alkuna</item>
         <item>E-Book</item>
         <item>Dictionary</item>
         <item>Quiz</item>

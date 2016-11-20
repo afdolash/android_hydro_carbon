@@ -2,47 +2,50 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_home"
-        android:icon="@android:drawable/ic_menu_info_details"
+        android:icon="@drawable/ic_home_24dp"
         android:title="@string/nav_home" />
 
-    <group android:id="@+id/nav_group_tutorial">
+    <group android:id="@+id/nav_group_tutorial"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_tutorial_alkana"
-            android:icon="@android:drawable/ic_menu_info_details"
+            android:icon="@drawable/ic_alkana_24dp"
             android:title="@string/nav_tutorial_alkana" />
 
         <item
-            android:id="@+id/nav_tutorial_alkuna"
-            android:icon="@android:drawable/ic_menu_info_details"
-            android:title="@string/nav_tutorial_alkuna" />
+            android:id="@+id/nav_tutorial_alkena"
+            android:icon="@drawable/ic_alkena_24dp"
+            android:title="@string/nav_tutorial_alkena" />
 
         <item
-            android:id="@+id/nav_tutorial_alkena"
-            android:icon="@android:drawable/ic_menu_info_details"
-            android:title="@string/nav_tutorial_alkena" />
+            android:id="@+id/nav_tutorial_alkuna"
+            android:icon="@drawable/ic_alkuna_24dp"
+            android:title="@string/nav_tutorial_alkuna" />
     </group>
 
-    <group android:id="@+id/nav_group_readable">
+    <group android:id="@+id/nav_group_readable"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_ebook"
-            android:icon="@android:drawable/ic_menu_info_details"
+            android:icon="@drawable/ic_ebook_24dp"
             android:title="@string/nav_ebook" />
 
         <item
             android:id="@+id/nav_dictionary"
-            android:icon="@android:drawable/ic_menu_info_details"
+            android:icon="@drawable/ic_dictionary_24dp"
             android:title="@string/nav_dictionary" />
     </group>
 
-    <group android:id="@+id/nav_group_work">
+    <group android:id="@+id/nav_group_work"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_quiz"
-            android:icon="@android:drawable/ic_menu_info_details"
+            android:icon="@drawable/ic_quiz_24dp"
             android:title="@string/nav_quiz" />
 
         <item
             android:id="@+id/nav_practice"
-            android:icon="@android:drawable/ic_menu_info_details"
+            android:icon="@drawable/ic_practice_24dp"
             android:title="@string/nav_practice" />
     </group>
 
@@ -50,11 +53,11 @@
         <menu>
             <item
                 android:id="@+id/nav_settings"
-                android:icon="@android:drawable/ic_menu_info_details"
+                android:icon="@drawable/ic_settings_24dp"
                 android:title="@string/nav_settings" />
             <item
                 android:id="@+id/nav_about_us"
-                android:icon="@android:drawable/ic_menu_info_details"
+                android:icon="@drawable/ic_about_24dp"
                 android:title="@string/nav_about_us" />
         </menu>
     </item>
