@@ -35,4 +35,6 @@
     <string name="activity_title_about_us">About Us</string>
 
     <string name="action_logout">Logout</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod hendrerit sapien eget placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </string>
 </resources>

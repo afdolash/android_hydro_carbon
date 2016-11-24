@@ -1,6 +1,8 @@
 package com.advinity.carbonteam.hydrocarbon.activity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -36,7 +38,6 @@ public class DrawerActivity extends AppCompatActivity {
     private DrawerLayout drawer;
     private View navHeader;
     private Toolbar toolbar;
-    private FloatingActionButton fab;
 
     // index to identify current nav menu item
     public static int navItemIndex = 0;
@@ -70,21 +71,12 @@ public class DrawerActivity extends AppCompatActivity {
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
 
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         // initializing navigation menu
         setUpNavigationView();
@@ -107,7 +99,7 @@ public class DrawerActivity extends AppCompatActivity {
                 //Check to see which item was being clicked and perform appropriate action
                 switch (menuItem.getItemId()) {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
-                    case R.id.home:
+                    case R.id.nav_home:
                         navItemIndex = 0;
                         CURRENT_TAG = TAG_HOME;
                         break;
@@ -201,8 +193,6 @@ public class DrawerActivity extends AppCompatActivity {
         if (getSupportFragmentManager().findFragmentByTag(CURRENT_TAG) != null) {
             drawer.closeDrawers();
 
-            // show or hide the fab button
-            toggleFab();
             return;
         }
 
@@ -227,9 +217,6 @@ public class DrawerActivity extends AppCompatActivity {
         if (mPendingRunnable != null) {
             mHandler.post(mPendingRunnable);
         }
-
-        // show or hide the fab button
-        toggleFab();
 
         //Closing drawer on item click
         drawer.closeDrawers();
@@ -277,13 +264,6 @@ public class DrawerActivity extends AppCompatActivity {
         }
     }
 
-    private void toggleFab() {
-        if (navItemIndex == 0)
-            fab.show();
-        else
-            fab.hide();
-    }
-
     private void setToolbarTitle() {
         getSupportActionBar().setTitle(activityTitles[navItemIndex]);
     }
@@ -315,14 +295,15 @@ public class DrawerActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
+    // Method untuk membuat menu pada pojok kiri atas (kotak 3)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
 
-        // show menu only when home fragment is selected
-        if (navItemIndex == 0) {
-            getMenuInflater().inflate(R.menu.main, menu);
-        }
+//        // show menu only when home fragment is selected
+//        if (navItemIndex == 0) {
+//            getMenuInflater().inflate(R.menu.main, menu);
+//        }
 
 //        // when fragment is notifications, load the menu created for notifications
 //        if (navItemIndex == 3) {
@@ -331,6 +312,7 @@ public class DrawerActivity extends AppCompatActivity {
         return true;
     }
 
+    // Method untuk memberi aksi pada menu pojok kiri atas (kotak 3)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -338,11 +320,11 @@ public class DrawerActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_logout) {
-            Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
-            return true;
-        }
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_logout) {
+//            Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }

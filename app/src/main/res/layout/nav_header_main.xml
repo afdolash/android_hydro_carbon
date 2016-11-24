@@ -8,11 +8,19 @@
     android:gravity="bottom"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+
     <ImageView
         android:id="@+id/img_header_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/nav_header" />
+        android:src="@drawable/bg_nav_header" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nav_header"/>
 
 </RelativeLayout>
