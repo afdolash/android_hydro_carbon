@@ -36,5 +36,9 @@
 
     <string name="action_logout">Logout</string>
 
+    <!-- Description -->
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod hendrerit sapien eget placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </string>
+
+    <!-- Menu e-book -->
+    <string name="download">Download</string>
 </resources>

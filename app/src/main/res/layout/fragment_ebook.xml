@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     tools:context="com.advinity.carbonteam.hydrocarbon.fragment.EbookFragment">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ebook_recyclerview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/colorPrimary"
-        android:background="@android:drawable/ic_menu_sort_alphabetically"/>
+        android:scrollbars="vertical"
+        android:clipToPadding="false"/>
 
 </FrameLayout>

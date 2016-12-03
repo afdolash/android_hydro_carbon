@@ -29,4 +29,9 @@ public class SplashActivity extends Activity {
 
         thread.start();
     }
+
+    @Override
+    public void onBackPressed() {
+        return;
+    }
 }

@@ -91,12 +91,14 @@ public class AlkunaFragment extends Fragment {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                Alkuna alkana = alkunaList.get(position);
+                Alkuna alkena = alkunaList.get(position);
 
-                Toast.makeText(getContext(), alkana.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), alkena.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
 
+                // Send the data to other activity here
                 Intent intent = new Intent(getActivity(), DescriptionActivity.class);
-                intent.putExtra("title", alkana.getTitle());
+                intent.putExtra("title", alkena.getTitle());
+
                 startActivity(intent);
             }
 

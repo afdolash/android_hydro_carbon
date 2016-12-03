@@ -98,8 +98,10 @@ public class AlkanaFragment extends Fragment {
 
                 Toast.makeText(getContext(), alkana.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
 
+                // Send the data to other activity here
                 Intent intent = new Intent(getActivity(), DescriptionActivity.class);
                 intent.putExtra("title", alkana.getTitle());
+
                 startActivity(intent);
             }
 
