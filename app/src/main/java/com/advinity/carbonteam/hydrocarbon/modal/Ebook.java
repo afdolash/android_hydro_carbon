@@ -7,12 +7,22 @@ package com.advinity.carbonteam.hydrocarbon.modal;
 public class Ebook {
     private String title;
     private String subtitle;
+    private String writer;
     private int thumbnail;
+    private int image;
+    private String edition;
+    private String year;
+    private String description;
 
-    public Ebook(String title, String subtitle, int thumbnail) {
+    public Ebook(String title, String subtitle, String writer, int thumbnail, int image, String edition, String year, String description) {
         this.title = title;
         this.subtitle = subtitle;
+        this.writer = writer;
         this.thumbnail = thumbnail;
+        this.image = image;
+        this.edition = edition;
+        this.year = year;
+        this.description = description;
     }
 
     public String getTitle() {
@@ -31,11 +41,51 @@ public class Ebook {
         this.subtitle = subtitle;
     }
 
+    public String getWriter() {
+        return writer;
+    }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
     public int getThumbnail() {
         return thumbnail;
     }
 
     public void setThumbnail(int thumbnail) {
         this.thumbnail = thumbnail;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
+
+    public String getEdition() {
+        return edition;
+    }
+
+    public void setEdition(String edition) {
+        this.edition = edition;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

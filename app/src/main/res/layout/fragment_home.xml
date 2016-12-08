@@ -1,14 +1,38 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.advinity.carbonteam.hydrocarbon.fragment.HomeFragment">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/colorPrimary"
-        android:background="@android:drawable/ic_menu_mylocation"/>
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_hc_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gunakan Navigatian Drawer Untuk Menjelajah Aplikasi"
+            android:textColor="@color/colorSubtitle"
+            android:textSize="12dp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

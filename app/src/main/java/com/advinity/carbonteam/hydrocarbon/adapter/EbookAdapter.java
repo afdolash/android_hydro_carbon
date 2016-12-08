@@ -59,7 +59,7 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.MyViewHolder
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Ebook ebook = ebookList.get(position);
         holder.title.setText(ebook.getTitle());
-        holder.subtitle.setText(ebook.getSubtitle());
+        holder.subtitle.setText(ebook.getWriter());
 
         holder.thumbnail.setImageResource(ebook.getThumbnail());
         //Glide.with(mContext).load(ebook.getThumbnail()).into(holder.thumbnail);
@@ -79,7 +79,12 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.MyViewHolder
                 // Send the data to other activity here
                 Intent intent = new Intent(mContext, EbookDetailsActivity.class);
                 intent.putExtra("title", ebook.getTitle());
-                intent.putExtra("thumbnail", ebook.getThumbnail());
+                intent.putExtra("subtitle", ebook.getSubtitle());
+                intent.putExtra("image", ebook.getImage());
+                intent.putExtra("writer", ebook.getWriter());
+                intent.putExtra("edition", ebook.getEdition());
+                intent.putExtra("year", ebook.getYear());
+                intent.putExtra("description", ebook.getDescription());
 
                 mContext.startActivity(intent);
             }

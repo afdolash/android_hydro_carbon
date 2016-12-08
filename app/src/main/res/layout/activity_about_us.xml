@@ -10,11 +10,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.advinity.carbonteam.hydrocarbon.activity.AboutUsActivity">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_centerInParent="true"
-        android:backgroundTint="@color/colorPrimary"
-        android:background="@android:drawable/ic_dialog_info"/>
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_about"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Name is"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afdolash Nur Kaffah"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

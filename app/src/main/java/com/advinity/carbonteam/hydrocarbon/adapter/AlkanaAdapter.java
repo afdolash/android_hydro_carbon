@@ -34,9 +34,9 @@ public class AlkanaAdapter extends RecyclerView.Adapter<AlkanaAdapter.MyViewHold
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Alkana alkana = alkanaList.get(position);
 
-        holder.title.setText(alkana.getTitle());
-        holder.subtitle.setText(alkana.getSubtitle());
-        holder.other.setText(alkana.getOther());
+        holder.title.setText(alkana.getName());
+        holder.subtitle.setText(alkana.getFormula());
+        holder.other.setText("more");
     }
 
     @Override

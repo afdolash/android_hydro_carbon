@@ -27,16 +27,16 @@ public class AlkenaAdapter extends RecyclerView.Adapter<AlkenaAdapter.MyViewHold
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_tutorial, parent, false);
 
-        return new AlkenaAdapter.MyViewHolder(view);
+        return new MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(AlkenaAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, int position) {
         Alkena alkena = alkenaList.get(position);
 
-        holder.title.setText(alkena.getTitle());
-        holder.subtitle.setText(alkena.getSubtitle());
-        holder.other.setText(alkena.getOther());
+        holder.title.setText(alkena.getName());
+        holder.subtitle.setText(alkena.getFormula());
+        holder.other.setText("more");
     }
 
     @Override

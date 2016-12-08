@@ -24,19 +24,19 @@ public class AlkunaAdapter extends RecyclerView.Adapter<AlkunaAdapter.MyViewHold
     }
 
     @Override
-    public AlkunaAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_tutorial, parent, false);
 
-        return new AlkunaAdapter.MyViewHolder(view);
+        return new MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(AlkunaAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, int position) {
         Alkuna alkuna = alkunaList.get(position);
 
-        holder.title.setText(alkuna.getTitle());
-        holder.subtitle.setText(alkuna.getSubtitle());
-        holder.other.setText(alkuna.getOther());
+        holder.title.setText(alkuna.getName());
+        holder.subtitle.setText(alkuna.getFormula());
+        holder.other.setText("more");
     }
 
     @Override

@@ -5,35 +5,81 @@ package com.advinity.carbonteam.hydrocarbon.modal;
  */
 
 public class Alkena {
-    private String title, subtitle, other;
+    private String name, formula, density, molar, boiling, melting, example;
+    private int image;
 
-    public Alkena(String title, String subtitle, String other) {
-        this.title = title;
-        this.subtitle = subtitle;
-        this.other = other;
+    public Alkena(String name, String formula, String density, String molar, String boiling, String melting, String example, int image) {
+        this.name = name;
+        this.formula = formula;
+        this.density = density;
+        this.molar = molar;
+        this.boiling = boiling;
+        this.melting = melting;
+        this.example = example;
+        this.image = image;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getSubtitle() {
-        return subtitle;
+    public String getFormula() {
+        return formula;
     }
 
-    public void setSubtitle(String subtitle) {
-        this.subtitle = subtitle;
+    public void setFormula(String formula) {
+        this.formula = formula;
     }
 
-    public String getOther() {
-        return other;
+    public String getDensity() {
+        return density;
     }
 
-    public void setOther(String other) {
-        this.other = other;
+    public void setDensity(String density) {
+        this.density = density;
+    }
+
+    public String getMolar() {
+        return molar;
+    }
+
+    public void setMolar(String molar) {
+        this.molar = molar;
+    }
+
+    public String getBoiling() {
+        return boiling;
+    }
+
+    public void setBoiling(String boiling) {
+        this.boiling = boiling;
+    }
+
+    public String getMelting() {
+        return melting;
+    }
+
+    public void setMelting(String melting) {
+        this.melting = melting;
+    }
+
+    public String getExample() {
+        return example;
+    }
+
+    public void setExample(String example) {
+        this.example = example;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 }
