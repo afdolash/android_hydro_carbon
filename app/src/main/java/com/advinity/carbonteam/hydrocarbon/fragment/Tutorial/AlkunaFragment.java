@@ -3,7 +3,7 @@ package com.advinity.carbonteam.hydrocarbon.fragment.Tutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.advinity.carbonteam.hydrocarbon.R;
 import com.advinity.carbonteam.hydrocarbon.activity.DescriptionActivity;
-import com.advinity.carbonteam.hydrocarbon.adapter.AlkenaAdapter;
 import com.advinity.carbonteam.hydrocarbon.adapter.AlkunaAdapter;
 import com.advinity.carbonteam.hydrocarbon.modal.Alkuna;
 import com.advinity.carbonteam.hydrocarbon.other.ClickListener;
@@ -47,7 +46,7 @@ public class AlkunaFragment extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.alkuna_recycleview);
 
         mAdapter = new AlkunaAdapter(alkunaList);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
@@ -60,15 +59,15 @@ public class AlkunaFragment extends Fragment {
     private void prepareAlkunaData() {
 
         int[] image = new int[]{
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header
+                R.drawable.alkuna_metuna,
+                R.drawable.alkuna_propuna,
+                R.drawable.alkuna_butuna,
+                R.drawable.alkuna_pentuna,
+                R.drawable.alkuna_heksuna,
+                R.drawable.alkuna_heptuna,
+                R.drawable.alkuna_oktuna,
+                R.drawable.alkuna_nonuna,
+                R.drawable.alkuna_dekuna
         };
 
         Alkuna alkuna = new Alkuna(
@@ -204,7 +203,7 @@ public class AlkunaFragment extends Fragment {
                 Toast.makeText(getContext(), alkuna.getName() + " is selected!", Toast.LENGTH_SHORT).show();
 
                 // Send the data to other activity here
-                Intent intent = new Intent(getActivity(), DescriptionActivity.class);
+                Intent intent = new Intent(getContext(), DescriptionActivity.class);
                 intent.putExtra("name", alkuna.getName());
                 intent.putExtra("formula", alkuna.getFormula());
                 intent.putExtra("density", alkuna.getDensity());

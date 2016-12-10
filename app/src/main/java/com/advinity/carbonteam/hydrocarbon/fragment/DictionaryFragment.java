@@ -15,7 +15,6 @@ import com.advinity.carbonteam.hydrocarbon.adapter.DictionaryAdapter;
 import com.advinity.carbonteam.hydrocarbon.modal.Dictionary;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -43,7 +42,7 @@ public class DictionaryFragment extends Fragment {
 
         // Setting layout untuk recylerview
         mAdapter = new DictionaryAdapter(dictionaryList);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);

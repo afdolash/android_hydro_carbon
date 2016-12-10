@@ -3,7 +3,7 @@ package com.advinity.carbonteam.hydrocarbon.fragment.Tutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -45,7 +45,7 @@ public class AlkanaFragment extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.alkana_recycleview);
 
         mAdapter = new AlkanaAdapter(alkanaList);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
@@ -58,16 +58,16 @@ public class AlkanaFragment extends Fragment {
     private void prepareAlkanaData() {
 
         int[] image = new int[]{
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header
+                R.drawable.alkana_metana,
+                R.drawable.alkana_etana,
+                R.drawable.alkana_propana,
+                R.drawable.alkana_butana,
+                R.drawable.alkana_pentana,
+                R.drawable.alkana_heksana,
+                R.drawable.alkana_heptana,
+                R.drawable.alkana_oktana,
+                R.drawable.alkana_nonana,
+                R.drawable.alkana_dekana
         };
 
         Alkana alkana = new Alkana(
@@ -214,7 +214,7 @@ public class AlkanaFragment extends Fragment {
                 Toast.makeText(getContext(), alkana.getName() + " is selected!", Toast.LENGTH_SHORT).show();
 
                 // Send the data to other activity here
-                Intent intent = new Intent(getActivity(), DescriptionActivity.class);
+                Intent intent = new Intent(getContext(), DescriptionActivity.class);
                 intent.putExtra("name", alkana.getName());
                 intent.putExtra("formula", alkana.getFormula());
                 intent.putExtra("density", alkana.getDensity());

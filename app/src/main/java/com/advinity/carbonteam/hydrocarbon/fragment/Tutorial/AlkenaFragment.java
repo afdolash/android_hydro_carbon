@@ -3,8 +3,8 @@ package com.advinity.carbonteam.hydrocarbon.fragment.Tutorial;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import org.jetbrains.annotations.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -46,7 +46,7 @@ public class AlkenaFragment extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.alkena_recycleview);
 
         mAdapter = new AlkenaAdapter(alkenaList);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
@@ -59,15 +59,15 @@ public class AlkenaFragment extends Fragment {
     private void prepareAlkenaData() {
 
         int[] image = new int[]{
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header,
-                R.drawable.bg_nav_header
+                R.drawable.alkena_metena,
+                R.drawable.alkena_propena,
+                R.drawable.alkena_butena,
+                R.drawable.alkena_pentena,
+                R.drawable.alkena_heksena,
+                R.drawable.alkena_heptena,
+                R.drawable.alkena_oktena,
+                R.drawable.alkena_nonena,
+                R.drawable.alkena_dekena
         };
 
         Alkena alkena = new Alkena(
@@ -219,7 +219,7 @@ public class AlkenaFragment extends Fragment {
                 Toast.makeText(getContext(), alkena.getName() + " is selected!", Toast.LENGTH_SHORT).show();
 
                 // Send the data to other activity here
-                Intent intent = new Intent(getActivity(), DescriptionActivity.class);
+                Intent intent = new Intent(getContext(), DescriptionActivity.class);
                 intent.putExtra("name", alkena.getName());
                 intent.putExtra("formula", alkena.getFormula());
                 intent.putExtra("density", alkena.getDensity());

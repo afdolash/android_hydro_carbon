@@ -1,10 +1,8 @@
 package com.advinity.carbonteam.hydrocarbon.fragment;
 
 
-import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -14,17 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.advinity.carbonteam.hydrocarbon.R;
-import com.advinity.carbonteam.hydrocarbon.activity.DescriptionActivity;
-import com.advinity.carbonteam.hydrocarbon.activity.EbookDetailsActivity;
 import com.advinity.carbonteam.hydrocarbon.adapter.EbookAdapter;
-import com.advinity.carbonteam.hydrocarbon.modal.Alkana;
 import com.advinity.carbonteam.hydrocarbon.modal.Ebook;
-import com.advinity.carbonteam.hydrocarbon.other.ClickListener;
-import com.advinity.carbonteam.hydrocarbon.other.RecyclerTouchListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,11 +42,11 @@ public class EbookFragment extends Fragment {
         recyclerView = (RecyclerView)view.findViewById(R.id.ebook_recyclerview);
 
         ebookList = new ArrayList<>();
-        adapter = new EbookAdapter(getActivity(), ebookList);
+        adapter = new EbookAdapter(getContext(), ebookList);
 
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getActivity(), 3);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 2);
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(3, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(12), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 

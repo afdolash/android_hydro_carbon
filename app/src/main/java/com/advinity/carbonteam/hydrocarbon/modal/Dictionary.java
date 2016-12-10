@@ -1,7 +1,5 @@
 package com.advinity.carbonteam.hydrocarbon.modal;
 
-import java.util.Comparator;
-
 /**
  * Created by afdolash on 25/11/16.
  */

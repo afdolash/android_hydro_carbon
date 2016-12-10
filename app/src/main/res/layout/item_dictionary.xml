@@ -8,7 +8,8 @@
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
     android:elevation="@dimen/cardview_default_elevation"
-    app:cardCornerRadius="@dimen/cardview_default_radius">
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    android:clickable="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
