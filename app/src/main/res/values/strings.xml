@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Hydro Carbon</string>
 
+    <string name="nav_settings">Settings</string>
+    <string name="activity_title_settings">Settings</string>
+
+    <string name="nav_about_us">About Us</string>
+    <string name="activity_title_about_us">About Us</string>
+
+    <string name="activity_title_result">Quiz Result</string>
+
+    <string name="activity_title_quiz">Quiz</string>
+
+    <!-- Ex -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="openDrawer">open_drawer</string>
@@ -28,17 +39,20 @@
         <item>Practice</item>
     </string-array>
 
-    <string name="nav_settings">Settings</string>
-    <string name="activity_title_settings">Settings</string>
-
-    <string name="nav_about_us">About Us</string>
-    <string name="activity_title_about_us">About Us</string>
-
-    <string name="action_logout">Logout</string>
-
     <!-- Description -->
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod hendrerit sapien eget placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </string>
 
     <!-- Menu e-book -->
     <string name="download">Download</string>
+
+    <!-- Quiz -->
+    <string-array name="quiz_range_question">
+        <item>Semua kategori</item>
+        <item>Alkana</item>
+        <item>Alkena</item>
+        <item>Alkuna</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

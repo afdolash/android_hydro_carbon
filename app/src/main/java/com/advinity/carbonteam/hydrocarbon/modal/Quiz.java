@@ -5,24 +5,30 @@ package com.advinity.carbonteam.hydrocarbon.modal;
  */
 
 public class Quiz {
-    private String label;
+    private String range;
     private String question;
-    private int answer;
-    private int[] thumbnail;
+    private String answer;
+    private String choiceA;
+    private String choiceB;
+    private String choiceC;
+    private String choiceD;
 
-    public Quiz(String label, String question, int answer, int[] thumbnail) {
-        this.label = label;
+    public Quiz(String range, String question, String answer, String choiceA, String choiceB, String choiceC, String choiceD) {
+        this.range = range;
         this.question = question;
         this.answer = answer;
-        this.thumbnail = thumbnail;
+        this.choiceA = choiceA;
+        this.choiceB = choiceB;
+        this.choiceC = choiceC;
+        this.choiceD = choiceD;
     }
 
-    public String getLabel() {
-        return label;
+    public String getRange() {
+        return range;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setRange(String range) {
+        this.range = range;
     }
 
     public String getQuestion() {
@@ -33,19 +39,43 @@ public class Quiz {
         this.question = question;
     }
 
-    public int getAnswer() {
+    public String getAnswer() {
         return answer;
     }
 
-    public void setAnswer(int answer) {
+    public void setAnswer(String answer) {
         this.answer = answer;
     }
 
-    public int[] getThumbnail() {
-        return thumbnail;
+    public String getChoiceA() {
+        return choiceA;
     }
 
-    public void setThumbnail(int[] thumbnail) {
-        this.thumbnail = thumbnail;
+    public void setChoiceA(String choiceA) {
+        this.choiceA = choiceA;
+    }
+
+    public String getChoiceB() {
+        return choiceB;
+    }
+
+    public void setChoiceB(String choiceB) {
+        this.choiceB = choiceB;
+    }
+
+    public String getChoiceC() {
+        return choiceC;
+    }
+
+    public void setChoiceC(String choiceC) {
+        this.choiceC = choiceC;
+    }
+
+    public String getChoiceD() {
+        return choiceD;
+    }
+
+    public void setChoiceD(String choiceD) {
+        this.choiceD = choiceD;
     }
 }

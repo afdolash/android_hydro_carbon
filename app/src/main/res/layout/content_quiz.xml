@@ -30,10 +30,12 @@
                 android:layout_marginBottom="12dp"/>
 
             <Spinner
+                android:id="@+id/quiz_range_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dialog"
-                android:layout_marginBottom="12dp"/>
+                android:spinnerMode="dropdown"
+                android:layout_marginBottom="12dp"
+                />
 
         </LinearLayout>
 
@@ -55,6 +57,7 @@
             android:layout_margin="12dp">
 
             <TextView
+                android:id="@+id/quiz_sum_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Jumlah Soal"
@@ -63,9 +66,11 @@
                 android:layout_marginBottom="14dp"/>
 
             <SeekBar
+                android:id="@+id/quiz_sum_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginBottom="12dp"
+                android:max="10"/>
 
         </LinearLayout>
 
@@ -88,6 +93,7 @@
             android:layout_margin="12dp">
 
             <TextView
+                android:id="@+id/quiz_time_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Waktu"
@@ -96,9 +102,11 @@
                 android:layout_marginBottom="14dp"/>
 
             <SeekBar
+                android:id="@+id/quiz_time_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginBottom="12dp"
+                android:max="10"/>
 
         </LinearLayout>
 

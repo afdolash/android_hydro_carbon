@@ -32,7 +32,13 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.EbookDetailsActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.QuizDetailActivity"
+            android:label="@string/activity_title_quiz" />
+        <activity
+            android:name=".activity.ResultActivity"
+            android:label="@string/activity_title_result"/>
     </application>
 
 </manifest>
