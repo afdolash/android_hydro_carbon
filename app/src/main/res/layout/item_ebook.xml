@@ -35,13 +35,14 @@
                 android:paddingTop="6dp"
                 android:textColor="@color/colorTitle"
                 android:lines="2"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/overflow"
                 android:layout_width="15dp"
                 android:layout_height="20dp"
-                android:paddingRight="6dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_dots" />

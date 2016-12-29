@@ -13,8 +13,9 @@ public class Ebook {
     private String edition;
     private String year;
     private String description;
+    private String url;
 
-    public Ebook(String title, String subtitle, String writer, int thumbnail, int image, String edition, String year, String description) {
+    public Ebook(String title, String subtitle, String writer, int thumbnail, int image, String edition, String year, String description, String url) {
         this.title = title;
         this.subtitle = subtitle;
         this.writer = writer;
@@ -23,6 +24,7 @@ public class Ebook {
         this.edition = edition;
         this.year = year;
         this.description = description;
+        this.url = url;
     }
 
     public String getTitle() {
@@ -87,5 +89,13 @@ public class Ebook {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

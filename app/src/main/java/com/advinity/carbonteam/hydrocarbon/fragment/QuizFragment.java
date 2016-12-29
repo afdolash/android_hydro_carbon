@@ -102,11 +102,19 @@ public class QuizFragment extends Fragment {
             }
         });
 
+        quizSum.setMax(30);
+        quizSum.setProgress(quizSum.getMax()/2);
+        sumQuiz = quizSum.getProgress();
+        quizSumLabel.setText("Jumlah Soal : "+ sumQuiz);
         quizSum.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                sumQuiz = progress;
-                quizSumLabel.setText("Jumlah Soal : "+ progress);
+                int min = 1;
+                int step = 1;
+
+                sumQuiz = min + (progress * step);
+
+                quizSumLabel.setText("Jumlah Soal : "+ sumQuiz);
             }
 
             @Override
@@ -116,11 +124,19 @@ public class QuizFragment extends Fragment {
             public void onStopTrackingTouch(SeekBar seekBar) {}
         });
 
+        quizTime.setMax(30);
+        quizTime.setProgress(quizSum.getMax()/2);
+        timeQuiz = quizTime.getProgress();
+        quizTimeLabel.setText("Waktu : "+ timeQuiz +" menit");
         quizTime.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                timeQuiz = progress;
-                quizTimeLabel.setText("Waktu : "+ progress +" menit");
+                int min = 10;
+                int step = 1;
+
+                timeQuiz = min + (progress * step);
+
+                quizTimeLabel.setText("Waktu : "+ timeQuiz +" menit");
             }
 
             @Override
@@ -133,10 +149,6 @@ public class QuizFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (sumQuiz == 0 || timeQuiz == 0) {
-                    return;
-                }
-
                 Toast.makeText(getContext(), "Soal : "+ sumQuiz +"\nWaktu : "+ timeQuiz +"\nRange : "+ CURRENT_TAG, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getContext(), QuizDetailActivity.class);
                 intent.putExtra("range", CURRENT_TAG);

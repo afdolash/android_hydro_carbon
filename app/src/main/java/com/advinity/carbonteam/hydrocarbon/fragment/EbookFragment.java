@@ -131,7 +131,8 @@ public class EbookFragment extends Fragment {
                         "Chemistry. By using the principles of physics and mathematics to obtain quantitative relations, physical " +
                         "chemistry deals with the structure and dynamics of matter. These relations are, in most cases, either " +
                         "concerned with phase and chemical equilibrium, or dynamic processes such as phase transitions, reaction " +
-                        "kinetics, charge transport, and energy exchange between systems and surroundings."
+                        "kinetics, charge transport, and energy exchange between systems and surroundings.",
+                "http://afdolash18.it.student.pens.ac.id/basic-physical-chemistry.pdf"
         );
         ebookList.add(ebook);
 
@@ -148,7 +149,8 @@ public class EbookFragment extends Fragment {
                         "in an academic or industrial setting.\n\nAll entries come with a sentence, which shows the application and, in addition, provides a piece of " +
                         "relevant and interesting information. In contrast to common dictionaries, this book does not have trivial " +
                         "entries (e.g. filter/Filter, metal/Metall, vacuum/Vakuum, project/Projekt). Only terms that are relevant " +
-                        "for work, 2600, were selected."
+                        "for work, 2600, were selected.",
+                "http://afdolash18.it.student.pens.ac.id/chemical-engineering-vocabulary.pdf"
         );
         ebookList.add(ebook);
 
@@ -165,7 +167,8 @@ public class EbookFragment extends Fragment {
                         "in an academic or industrial setting.\n\nAll entries come with a sentence, which shows the application and, in addition, provides a piece of " +
                         "relevant and interesting information. In contrast to common dictionaries, this book does not have trivial " +
                         "entries (e.g. filter/Filter, metal/Metall, vacuum/Vakuum, project/Projekt). Only terms that are relevant " +
-                        "for work, 2600, were selected."
+                        "for work, 2600, were selected.",
+                "http://afdolash18.it.student.pens.ac.id/chemical-engineering-vocabulary-2016.pdf"
         );
         ebookList.add(ebook);
 
@@ -183,7 +186,8 @@ public class EbookFragment extends Fragment {
                         "The aim of this book is to explain and clarify important terms and concepts which the students are " +
                         "supposed to be familiar with. The book can not replace existing educational textbooks, but it gives a " +
                         "great supplement to the education within chemistry. Many smaller assignments and examples including " +
-                        "solutions are given in the book."
+                        "solutions are given in the book.",
+                "http://afdolash18.it.student.pens.ac.id/chemistry.pdf"
         );
         ebookList.add(ebook);
 
@@ -199,7 +203,8 @@ public class EbookFragment extends Fragment {
                         "facts but the principles and theories behind the facts. The problem with this approach is " +
                         "that chemical principles and theories are not good enough for this. They only explain a " +
                         "small fraction of all the facts. Teaching principles and theories without any facts therefore " +
-                        "leaves students ignorant of many of the facts, including very basic ones."
+                        "leaves students ignorant of many of the facts, including very basic ones.",
+                "http://afdolash18.it.student.pens.ac.id/essential-descriptive-inorganic-chemistry.pdf"
         );
         ebookList.add(ebook);
 
@@ -215,7 +220,8 @@ public class EbookFragment extends Fragment {
                         "and technology? I believe that it can. It is an ill-informed judgement of a piece of scholarship which " +
                         "equates brevity with superficiality. This book is very focused and is intended to bring out new perspectives " +
                         "rather than to reproduce information readily available elsewhere. It is to that, not to any deficiency in " +
-                        "content, that the book owes its modest length."
+                        "content, that the book owes its modest length.",
+                "http://afdolash18.it.student.pens.ac.id/hydrocarbons.pdf"
         );
         ebookList.add(ebook);
 
@@ -234,7 +240,8 @@ public class EbookFragment extends Fragment {
                         "are very similar to those studied under organic chemistry (e.g. the silicon analogues of the hydrocarbons). " +
                         "It is best, therefore, to think of inorganic chemistry as the chemistry of all the elements, with organic " +
                         "chemistry as being a more detailed study of certain important aspects of one of them - viz. the " +
-                        "hydrocarbons and their derivatives."
+                        "hydrocarbons and their derivatives.",
+                "http://afdolash18.it.student.pens.ac.id/introduction-to-inorganic-chemistry.pdf"
         );
         ebookList.add(ebook);
 
@@ -250,7 +257,8 @@ public class EbookFragment extends Fragment {
                         "throughout their academic career.\n\nAll of the problems presented in this text all fully worked with proper and correct answers. Do yourself a " +
                         "favor. Write the statement of the problems on a piece of paper, exit the text, and try to solve the problems. " +
                         "If you get stuck on a problem, refer back to the text. After several trials of the problems in this fashion " +
-                        "you will probably find you have mastered the material."
+                        "you will probably find you have mastered the material.",
+                "http://afdolash18.it.student.pens.ac.id/introductory-chemistry.pdf"
         );
         ebookList.add(ebook);
 

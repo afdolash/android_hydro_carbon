@@ -6,17 +6,13 @@
     android:padding="12dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Waktu" />
-
-    <TextView
         android:id="@+id/quiz_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00"
-        android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/quiz_question"
@@ -25,8 +21,8 @@
         android:text="Ini adalah soal yang harus dikerjakan dengan benar harus benar tidak boleh salah karena jika salaha adalah tanggung jawab a"
         android:textSize="16dp"
         android:textAlignment="center"
-        android:layout_marginTop="18dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"/>
 
@@ -47,7 +43,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp">
+                android:layout_margin="12dp">
 
                 <ImageView
                     android:id="@+id/quiz_choiceA_img"
@@ -60,7 +56,7 @@
                     android:id="@+id/quiz_choiceA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pilihan 1"
+                    android:text="Ini adalah pilihan jawaban pertama, harap pilih dengan tepat teliti dan seksama"
                     android:textAlignment="center"
                     android:layout_centerInParent="true"/>
 
@@ -78,7 +74,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp">
+                android:layout_margin="12dp">
 
                 <ImageView
                     android:id="@+id/quiz_choiceB_img"
@@ -118,7 +114,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp">
+                android:layout_margin="12dp">
 
                 <ImageView
                     android:id="@+id/quiz_choiceC_img"
@@ -148,15 +144,15 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="12dp">
 
                 <ImageView
                     android:id="@+id/quiz_choiceD_img"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerInside"
-                    android:layout_centerInParent="true"
-                    android:layout_margin="8dp"/>
+                    android:layout_centerInParent="true"/>
 
                 <TextView
                     android:id="@+id/quiz_choiceD"

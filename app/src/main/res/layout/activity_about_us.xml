@@ -31,14 +31,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Name is"
+                android:text="My Team is"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Afdolash Nur Kaffah"
+                android:text="Hydro Carbon"
                 android:textSize="17dp"/>
 
         </LinearLayout>
