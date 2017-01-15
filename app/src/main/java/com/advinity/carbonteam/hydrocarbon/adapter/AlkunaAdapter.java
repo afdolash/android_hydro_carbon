@@ -36,7 +36,6 @@ public class AlkunaAdapter extends RecyclerView.Adapter<AlkunaAdapter.MyViewHold
 
         holder.title.setText(alkuna.getName());
         holder.subtitle.setText(alkuna.getFormula());
-        holder.other.setText("more");
     }
 
     @Override
@@ -51,7 +50,6 @@ public class AlkunaAdapter extends RecyclerView.Adapter<AlkunaAdapter.MyViewHold
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.item_title);
             subtitle = (TextView) itemView.findViewById(R.id.item_subtitle);
-            other = (TextView) itemView.findViewById(R.id.item_other);
         }
     }
 }

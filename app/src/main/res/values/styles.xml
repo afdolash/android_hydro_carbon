@@ -16,7 +16,7 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <!-- SplashScreen activity theme -->
+    <!-- Setting & About activity theme -->
     <style name="AppThemeBlack" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimaryBlack</item>
@@ -25,6 +25,19 @@
     </style>
 
     <style name="AppThemeBlack.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Result activity theme -->
+    <style name="AppThemeRe" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRe</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryReDark</item>
+        <item name="colorAccent">@color/colorAccentRe</item>
+    </style>
+
+    <style name="AppThemeRe.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

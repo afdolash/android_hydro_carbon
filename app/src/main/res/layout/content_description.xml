@@ -18,26 +18,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -52,26 +67,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rumus Molekul"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_formula"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumus Molekul"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_formula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -86,26 +116,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Massa Jenis"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_density"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Massa Jenis"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_density"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -120,26 +165,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Massa Molar"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_molar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Massa Molar"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_molar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -154,26 +214,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Titik Didih"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_boiling"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Titik Didih"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_boiling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -188,26 +263,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Titik Lebur"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_melting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Titik Lebur"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_melting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -222,25 +312,40 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Keterangan"
-                android:textColor="@color/colorTitle"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/item_example"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/item_example"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/bg_description_detail"/>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 </LinearLayout>

@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         app:layout_anchor="@id/app_bar_layout"
         app:layout_anchorGravity="right|bottom|end"
-        app:srcCompat="@drawable/ic_download"
+        app:srcCompat="@drawable/ic_read"
         android:layout_marginRight="@dimen/fab_margin" />
 
 </android.support.design.widget.CoordinatorLayout>

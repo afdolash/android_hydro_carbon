@@ -95,6 +95,7 @@ public class QuizDetailActivity extends AppCompatActivity {
                 setQuiz();
             }
         };
+
         quizTimer = new CountDownTimer(time*60000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
@@ -166,7 +167,7 @@ public class QuizDetailActivity extends AppCompatActivity {
     }
 
     private void setMyAnswer(final Quiz quiz) {
-        Toast.makeText(QuizDetailActivity.this, quiz.getRange(), Toast.LENGTH_SHORT).show();
+//        Toast.makeText(QuizDetailActivity.this, quiz.getRange(), Toast.LENGTH_SHORT).show();
         quizBtnChoiceA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -289,25 +290,36 @@ public class QuizDetailActivity extends AppCompatActivity {
     }
 
     private void setResult() {
-        for (int i = 0; i < answerList.size(); i++) {
-            Answer answer = answerList.get(i);
+        if (answerList.size() == 0) {
+            finalScore = 0;
+            correctAnswer = 0;
+            wrongAnswer = 0;
+            finalTime = time * 60000;
+            averageTime = finalTime;
+            breakdown = null;
 
-            if (answer.getAnswer().equals("Benar")) {
-                correctAnswer++;
-            } else {
-                wrongAnswer++;
+        } else {
+            for (int i = 0; i < answerList.size(); i++) {
+                Answer answer = answerList.get(i);
+
+                if (answer.getAnswer().equals("Benar")) {
+                    correctAnswer++;
+                } else {
+                    wrongAnswer++;
+                }
+
+                if (breakdown == null) {
+                    breakdown = "Pertanyaan "+ answer.getId() +"\t\t\t\t"+ answer.getRange() +"\t\t\t\t"+ answer.getAnswer() +"\n";
+                } else {
+                    breakdown = breakdown +"Pertanyaan "+ answer.getId() +"\t\t\t\t"+ answer.getRange() +"\t\t\t\t"+ answer.getAnswer() +"\n";
+                }
             }
 
-            if (breakdown == null) {
-                breakdown = "Pertanyaan "+ answer.getId() +"\t\t\t\t"+ answer.getRange() +"\t\t\t\t"+ answer.getAnswer() +"\n";
-            } else {
-                breakdown = breakdown +"Pertanyaan "+ answer.getId() +"\t\t\t\t"+ answer.getRange() +"\t\t\t\t"+ answer.getAnswer() +"\n";
-            }
+            finalScore = (correctAnswer * 100) / answerList.size();
+            finalTime = (time * 60000) - outTime;
+            averageTime = finalTime / (correctAnswer + wrongAnswer);
+
         }
-
-        finalScore = (correctAnswer * 100) / answerList.size();
-        finalTime = (time * 60000) - outTime;
-        averageTime = finalTime / (correctAnswer + wrongAnswer);
 
         Intent intent = new Intent(QuizDetailActivity.this, ResultActivity.class);
         intent.putExtra("finalScore", finalScore);
@@ -603,11 +615,11 @@ public class QuizDetailActivity extends AppCompatActivity {
         quiz = new Quiz(
                 "Alkena",
                 "Titik didih dari Heptena adalah ...",
-                "98.38[3] °C",
-                "98.26[3] °C",
-                "98.38[3] °C",
-                "98.35[3] °C",
-                "98.04[3] °C"
+                "98.38 °C",
+                "98.26 °C",
+                "98.38 °C",
+                "98.35 °C",
+                "98.04 °C"
         );
         quizList.add(quiz);
     }

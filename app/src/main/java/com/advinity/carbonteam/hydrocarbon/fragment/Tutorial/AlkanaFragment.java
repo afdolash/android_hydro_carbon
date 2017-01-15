@@ -211,7 +211,7 @@ public class AlkanaFragment extends Fragment {
             public void onClick(View view, int position) {
                 Alkana alkana = alkanaList.get(position);
 
-                Toast.makeText(getContext(), alkana.getName() + " is selected!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), alkana.getName() + " is selected!", Toast.LENGTH_SHORT).show();
 
                 // Send the data to other activity here
                 Intent intent = new Intent(getContext(), DescriptionActivity.class);

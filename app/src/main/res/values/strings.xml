@@ -43,7 +43,7 @@
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod hendrerit sapien eget placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. </string>
 
     <!-- Menu e-book -->
-    <string name="view">Baca E-Book</string>
+    <string name="view">Baca e-book</string>
 
     <!-- Quiz -->
     <string-array name="quiz_range_question">

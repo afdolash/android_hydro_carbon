@@ -75,7 +75,7 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.MyViewHolder
         holder.thumbnail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, ebook.getTitle()+ " is selected!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(mContext, ebook.getTitle()+ " is selected!", Toast.LENGTH_SHORT).show();
 
                 // Send the data to other activity here
                 Intent intent = new Intent(mContext, EbookDetailsActivity.class);
@@ -107,11 +107,12 @@ public class EbookAdapter extends RecyclerView.Adapter<EbookAdapter.MyViewHolder
                         pdfIntent.setDataAndType(Uri.parse(fileUrl), "application/pdf");
                         pdfIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-                        try{
+                        try {
                             mContext.startActivity(pdfIntent);
-                        }catch(ActivityNotFoundException e){
+                        } catch(ActivityNotFoundException e){
                             Toast.makeText(mContext, "Tidak ada aplikasi untuk membuka PDF file", Toast.LENGTH_SHORT).show();
                         }
+
                         return true;
 
                     default:

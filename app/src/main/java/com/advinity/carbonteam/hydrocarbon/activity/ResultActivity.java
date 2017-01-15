@@ -3,6 +3,8 @@ package com.advinity.carbonteam.hydrocarbon.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.advinity.carbonteam.hydrocarbon.R;
@@ -16,6 +18,7 @@ public class ResultActivity extends AppCompatActivity {
     private TextView resultTime;
     private TextView resultAverageTime;
     private TextView resultBreakdown;
+    private Button retry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class ResultActivity extends AppCompatActivity {
         resultTime = (TextView) findViewById(R.id.result_time);
         resultAverageTime = (TextView) findViewById(R.id.result_average_time);
         resultBreakdown = (TextView) findViewById(R.id.result_breakdown);
+        retry = (Button) findViewById(R.id.btn_back_menu);
 
         Integer finalScore = (Integer) getIntent().getExtras().get("finalScore");
         Integer question = (Integer) getIntent().getExtras().get("question");
@@ -54,6 +58,13 @@ public class ResultActivity extends AppCompatActivity {
         resultTime.setText(minutes +" menit "+ second +" detik");
         resultAverageTime.setText(averageTime / 1000 +" detik/soal");
         resultBreakdown.setText(breakdown);
+
+        retry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override
