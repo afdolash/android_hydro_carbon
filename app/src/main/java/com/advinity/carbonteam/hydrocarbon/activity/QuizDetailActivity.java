@@ -290,6 +290,8 @@ public class QuizDetailActivity extends AppCompatActivity {
     }
 
     private void setResult() {
+        quizTimer.cancel();
+
         if (answerList.size() == 0) {
             finalScore = 0;
             correctAnswer = 0;

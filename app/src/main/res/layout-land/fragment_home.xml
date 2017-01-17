@@ -7,8 +7,8 @@
     android:gravity="center"
     android:paddingTop="50dp"
     android:paddingBottom="50dp"
-    android:paddingLeft="25dp"
-    android:paddingRight="25dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
     tools:context="com.advinity.carbonteam.hydrocarbon.fragment.HomeFragment"
     android:background="@drawable/bg_nav_header">
 
@@ -16,10 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_weight="1"
-        android:background="@null"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp">
+        android:layout_weight="1">
 
         <android.support.v7.widget.CardView
             android:id="@+id/btn_home_dictionary"
@@ -57,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginRight="3dp"
             android:layout_marginLeft="3dp"
             android:layout_marginBottom="3dp"
             android:elevation="@dimen/cardview_default_elevation"
@@ -77,6 +75,69 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="E-Book"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_home_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/cardview_default_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_quiz"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quiz"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_home_practice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/cardview_default_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_practice"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practice"
                     android:layout_marginTop="3dp"/>
 
             </LinearLayout>
@@ -109,8 +170,8 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/ic_alkana_24dp"/>
 
                 <TextView
@@ -139,8 +200,8 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/ic_alkena_24dp"/>
 
                 <TextView
@@ -171,86 +232,14 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/ic_alkuna_24dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Alkuna"
-                    android:layout_marginTop="3dp"/>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp">
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/btn_home_quiz"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginRight="3dp"
-            android:layout_marginTop="3dp"
-            android:elevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/cardview_default_radius">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_quiz"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Quiz"
-                    android:layout_marginTop="3dp"/>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/btn_home_practice"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="3dp"
-            android:elevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/cardview_default_radius">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_practice"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Practice"
                     android:layout_marginTop="3dp"/>
 
             </LinearLayout>

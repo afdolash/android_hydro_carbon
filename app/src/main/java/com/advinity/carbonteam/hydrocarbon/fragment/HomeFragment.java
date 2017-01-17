@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.advinity.carbonteam.hydrocarbon.R;
+import com.advinity.carbonteam.hydrocarbon.activity.DrawerActivity;
 import com.advinity.carbonteam.hydrocarbon.activity.DrawerActivity.*;
 import com.advinity.carbonteam.hydrocarbon.fragment.Tutorial.AlkanaFragment;
 import com.advinity.carbonteam.hydrocarbon.fragment.Tutorial.AlkenaFragment;
@@ -28,6 +29,15 @@ public class HomeFragment extends Fragment {
     private CardView btn_alkuna;
     private CardView btn_quiz;
     private CardView btn_practice;
+
+    // tags used to attach the fragments
+    private static final String TAG_ALKANA = "alkana";
+    private static final String TAG_ALKENA = "alkena";
+    private static final String TAG_ALKUNA = "alkuna";
+    private static final String TAG_DICTIONARY = "dictionary";
+    private static final String TAG_EBOOK = "ebook";
+    private static final String TAG_PRACTICE = "practice";
+    private static final String TAG_QUIZ = "quiz";
 
     public HomeFragment() {
         // Required empty public constructor
@@ -53,88 +63,52 @@ public class HomeFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        btn_dictionary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment fragment = new DictionaryFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
-            }
-        });
-
-        btn_ebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment fragment = new EbookFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
-            }
-        });
-
         btn_alkana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new AlkanaFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
+                ((DrawerActivity)getActivity()).setCurrentTag(1, TAG_ALKANA);
             }
         });
 
         btn_alkena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new AlkenaFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
+                ((DrawerActivity)getActivity()).setCurrentTag(2, TAG_ALKENA);
             }
         });
 
         btn_alkuna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new AlkunaFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
+                ((DrawerActivity)getActivity()).setCurrentTag(3, TAG_ALKUNA);
+            }
+        });
+
+        btn_ebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((DrawerActivity)getActivity()).setCurrentTag(4, TAG_EBOOK);
+            }
+        });
+
+        btn_dictionary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((DrawerActivity)getActivity()).setCurrentTag(5, TAG_DICTIONARY);
             }
         });
 
         btn_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new QuizFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
+                ((DrawerActivity)getActivity()).setCurrentTag(6, TAG_QUIZ);
             }
         });
 
         btn_practice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new PracticeFragment();
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.frame, fragment);
-                fragmentTransaction.commitAllowingStateLoss();
+                ((DrawerActivity)getActivity()).setCurrentTag(7, TAG_PRACTICE);
             }
         });
     }

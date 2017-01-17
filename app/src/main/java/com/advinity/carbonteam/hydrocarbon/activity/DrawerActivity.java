@@ -89,6 +89,12 @@ public class DrawerActivity extends AppCompatActivity {
         }
     }
 
+    public void setCurrentTag(int navItemIndexHome, String CURRENT_TAG_HOME) {
+        navItemIndex = navItemIndexHome;
+        CURRENT_TAG = CURRENT_TAG_HOME;
+        loadHomeFragment();
+    }
+
     private void setUpNavigationView() {
         //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

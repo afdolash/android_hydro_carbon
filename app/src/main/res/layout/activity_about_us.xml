@@ -7,87 +7,80 @@
     android:orientation="vertical"
     tools:context="com.advinity.carbonteam.hydrocarbon.activity.AboutUsActivity">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hydro Carbon"
+            android:textSize="40dp"
+            android:layout_gravity="center"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hydro Carbon"
-                android:textSize="40dp"
-                android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textSize="16dp"
+            android:layout_gravity="center"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Version 1.0.0"
-                android:textSize="16dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="6dp"/>
+        <ImageView
+            android:layout_width="@dimen/profile_width"
+            android:layout_height="@dimen/profile_height"
+            android:src="@drawable/ic_hc_launcher"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_hc_launcher"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="HydroCarbon Dev.\nPoliteknik Elektronika Negeri Surabaya\nKeputih, Sukolilo, Surabaya 60111\nIndonesia" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="HydroCarbon Dev.\nPoliteknik Elektronika Negeri Surabaya\nKeputih, Sukolilo, Surabaya 60111\nIndonesia" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mengalami masalah ?"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Mengalami masalah ?"
-                android:textStyle="bold"
-                android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="WhatsApp : 08124078773"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="WhatsApp : 08124078773"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="E-mail : hydrocarbon.pens.ac.id"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="E-mail : hydrocarbon.pens.ac.id"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Line@ : @HydroCarbon"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Line@ : @HydroCarbon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Twitter :HydroCarbon"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Twitter :HydroCarbon"/>
-
-        </LinearLayout>
-
-    </ScrollView>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
