@@ -138,11 +138,6 @@ public class DrawerActivity extends AppCompatActivity {
                         navItemIndex = 7;
                         CURRENT_TAG = TAG_PRACTICE;
                         break;
-                    case R.id.nav_settings:
-                        // launch new intent instead of loading fragment
-                        startActivity(new Intent(DrawerActivity.this, SettingsActivity.class));
-                        drawer.closeDrawers();
-                        return true;
                     case R.id.nav_about_us:
                         // launch new intent instead of loading fragment
                         startActivity(new Intent(DrawerActivity.this, AboutUsActivity.class));
