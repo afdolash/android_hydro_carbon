@@ -72,7 +72,7 @@ public class AlkenaFragment extends Fragment {
 
         Alkena alkena = new Alkena(
                 "Etena",
-                "C2H6",
+                "C2H4",
                 "1.178 kg/m³ (la 15 °C)",
                 "28.05 g/mol",
                 "−103.7 °C",
@@ -85,7 +85,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Propena",
-                "C3H8",
+                "C3H6",
                 "1.81 kg/m³ (la 15 °C)",
                 "42.08 g/mol",
                 "−47.6 °C",
@@ -97,7 +97,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Butena",
-                "C4H10",
+                "C4H8",
                 "0.62 g/cm³",
                 "56.11 g·mol−1",
                 "−6.47 °C (20.35 °F; 266.68 K)",
@@ -110,7 +110,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Pentena",
-                "C5H12",
+                "C5H10",
                 "0.626 g·mL−1",
                 "72.15 g·mol−1",
                 "35.9 to 36.3 °C\n" +
@@ -127,7 +127,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Heksena",
-                "C6H14",
+                "C6H12",
                 "0.6548 g·mL−1",
                 "86.18 g·mol−1",
                 "68.5 to 69.1 °C\n" +
@@ -144,7 +144,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Heptena",
-                "C7H16",
+                "C7H14",
                 "0.6795 g·cm−3",
                 "100.21 g·mol−1",
                 "98.38 °C (209.08 °F; 371.53 K)",
@@ -157,7 +157,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Oktena",
-                "C8H18",
+                "C8H16",
                 "0.703 g·cm−3",
                 "114.23 g·mol−1",
                 "125.1 to 126.1 °C\n" +
@@ -174,7 +174,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Nonena",
-                "C9H20",
+                "C9H18",
                 "718 mg·mL−1",
                 "128.26 g·mol−1",
                 "150.4 to 151.0 °C\n" +
@@ -191,7 +191,7 @@ public class AlkenaFragment extends Fragment {
 
         alkena = new Alkena(
                 "Dekena",
-                "C10H22",
+                "C10H20",
                 "0.730 g·mL−1",
                 "142.29 g·mol−1",
                 "173.8 to 174.4 °C\n" +

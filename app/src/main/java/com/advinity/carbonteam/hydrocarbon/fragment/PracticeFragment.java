@@ -218,15 +218,13 @@ public class PracticeFragment extends Fragment {
                         SUM += 9;
                 }
 
-                Iterator<Practice> iterator = practiceList.iterator();
-
                 for (int i = 0; i < practiceList.size(); i++) {
                     Practice practice = practiceList.get(i);
 
                     if (SUM == practice.getIndex()) {
                         new AlertDialog.Builder(getContext())
-                                .setTitle(iterator.next().getName())
-                                .setMessage("Rumus molekul : " + iterator.next().getFormula() + "\n\nDeskripsi singkat :\n" + iterator.next().getOther())
+                                .setTitle(practice.getName())
+                                .setMessage("Rumus molekul : " + practice.getFormula() + "\n\nDeskripsi singkat :\n" + practice.getOther())
                                 .setCancelable(false)
                                 .setNegativeButton("Tutup", null)
                                 .show();
@@ -297,7 +295,7 @@ public class PracticeFragment extends Fragment {
         practice = new Practice(
                 49,
                 "Etena",
-                "C2H6",
+                "C2H4",
                 "Senyawa antara pada produksi senyawa ilmiah lain, seperti plastik. Etena dibentuk secara alami " +
                         "oleh tumbuhan dan berperan sebagai hormon."
         );
@@ -306,7 +304,7 @@ public class PracticeFragment extends Fragment {
         practice = new Practice(
                 79,
                 "Propena",
-                "C3H8",
+                "C3H6",
                 "Merupakan senyawwa alkena paling sederhana kedua setelah etena."
         );
         practiceList.add(practice);

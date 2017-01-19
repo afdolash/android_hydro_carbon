@@ -158,8 +158,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginLeft="3dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"            android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp"
             android:elevation="@dimen/cardview_default_elevation"
             app:cardCornerRadius="@dimen/cardview_default_radius">
