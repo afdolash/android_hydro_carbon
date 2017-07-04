@@ -36,10 +36,6 @@
             android:theme="@style/AppThemeBlack"
             android:label="@string/activity_title_about_us" />
         <activity
-            android:name=".activity.SettingsActivity"
-            android:theme="@style/AppThemeBlack"
-            android:label="@string/activity_title_settings" />
-        <activity
             android:name=".activity.DescriptionActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
